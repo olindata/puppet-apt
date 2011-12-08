@@ -1,0 +1,23 @@
+{
+  "name": "tribily-apt",
+  "author": "Walter Heck",
+  "description": "",
+  "license": "GPL v2",
+  "project_page": "",
+  "source": "",
+  "summary": "An apt repo for debian distributions",
+  "version": "1.0",
+  "checksums": {
+    "Modulefile": "06ac002660340060eeaa00351d007b2c",
+    "README": "39b1c619dd128ab81e45c95a927a1661",
+    "manifests/init.pp": "6ac5c12831de1daee98767db8700d95a",
+    "manifests/key.pp": "452e0a1ca6973841856a22d9bd0cf999",
+    "manifests/repo/lenny-backports.pp": "e0dd70b91e775fdffa0956e3b6cc9177",
+    "manifests/repo/mariadb.pp": "1f435b5910bbf464a9fd46de2cb3b04d",
+    "manifests/repo/puppetlabs.pp": "f4296fc69c6d23c336300d00e79af75f",
+    "manifests/repo/rabbitmq.pp": "15e88d53a4944ec07e0e10f2e93e99fb",
+    "manifests/repository.pp": "4fd3d52c616b43f36c4b0dfd05d9c703",
+    "templates/repository.list.erb": "8fd3cbd3c227985ea8e51ba7c68d3716"
+  },
+  "dependencies": []
+}
