@@ -1,3 +1,7 @@
 puppet-apt
 
 This is the puppet-apt module.
+
+* Apt module quickly imported from Marco Bonetti's work
+* Adapted by Walter Heck <walter@tribily.com> in 2011-09 for Tribily
+* Adapted by Walter Heck <walter@openquery.com> in 2011-11 for Open Query

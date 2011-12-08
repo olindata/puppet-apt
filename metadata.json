@@ -9,14 +9,14 @@
   "version": "1.0",
   "checksums": {
     "Modulefile": "06ac002660340060eeaa00351d007b2c",
-    "README": "39b1c619dd128ab81e45c95a927a1661",
-    "manifests/init.pp": "6ac5c12831de1daee98767db8700d95a",
-    "manifests/key.pp": "452e0a1ca6973841856a22d9bd0cf999",
-    "manifests/repo/lenny-backports.pp": "e0dd70b91e775fdffa0956e3b6cc9177",
-    "manifests/repo/mariadb.pp": "1f435b5910bbf464a9fd46de2cb3b04d",
-    "manifests/repo/puppetlabs.pp": "f4296fc69c6d23c336300d00e79af75f",
-    "manifests/repo/rabbitmq.pp": "15e88d53a4944ec07e0e10f2e93e99fb",
-    "manifests/repository.pp": "4fd3d52c616b43f36c4b0dfd05d9c703",
+    "README": "3947770e637259fcf0c103b2e2f79a56",
+    "manifests/init.pp": "3d99de25d3d57430af00855c0ea6d4ba",
+    "manifests/key.pp": "7272670d0dd4131ad83e711f3f366c49",
+    "manifests/repo/lenny-backports.pp": "c0f1a138f5d8027ca993615419f53189",
+    "manifests/repo/mariadb.pp": "0d177095f7f7961e2a308eb7a796fbd7",
+    "manifests/repo/puppetlabs.pp": "1ea8c8e870693bf7b8c76b93b017a522",
+    "manifests/repo/rabbitmq.pp": "aa8d82aebf99bfd2bd034187b2d76b99",
+    "manifests/repository.pp": "9c21a15afa31b72675852b09d5285c5d",
     "templates/repository.list.erb": "8fd3cbd3c227985ea8e51ba7c68d3716"
   },
   "dependencies": []

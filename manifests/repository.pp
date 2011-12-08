@@ -33,19 +33,18 @@ define apt::repository (
     $repository,
     $source=false
 ) { 
-    include apt
+  include apt
 
-    # Create repository file
-    file { "${name}.list":
-        path    => "/etc/apt/sources.list.d/${name}.list",
-        mode    => "644",
-        owner   => "root",
-        group   => "root",
-        require => File["/etc/apt/sources.list.d"],
-        ensure  => present,
-        content => template("apt/repository.list.erb"),
+  # Create repository file
+  file { "${name}.list":
+    path    => "/etc/apt/sources.list.d/${name}.list",
+    mode    => "644",
+    owner   => "root",
+    group   => "root",
+    require => File["/etc/apt/sources.list.d"],
+    ensure  => present,
+    content => template("apt/repository.list.erb"),
     notify  => Exec["aptget_update"],
-    }
-
+  }
 }
 
