@@ -10,6 +10,7 @@ class apt::repo::mariadb {
     url         => "http://ftp.osuosl.org/pub/mariadb/repo/5.2/debian",
     distro      => $::lsbdistcodename,
     repository  => "main",
+    require    => Apt::Key["1BB943DB"]
   }
 }
 

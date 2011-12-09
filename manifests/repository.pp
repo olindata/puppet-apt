@@ -31,7 +31,8 @@ define apt::repository (
     $url,
     $distro,
     $repository,
-    $source=false
+    $source=false,
+    $require=undef
 ) { 
   include apt
 
@@ -45,6 +46,19 @@ define apt::repository (
     ensure  => present,
     content => template("apt/repository.list.erb"),
     notify  => Exec["aptget_update"],
+    before  => Exec["aptget_update"],
   }
+  
+  if $require {
+      File["${name}.list"] {
+             require => [ $require, File["/etc/apt/sources.list.d"] ]
+     }
+  } else {
+      File["${name}.list"] {
+             require => File["/etc/apt/sources.list.d"]
+      }
+  }
+
+    Exec["aptget_update"] -> Package <||>
 }
 

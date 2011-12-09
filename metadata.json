@@ -13,10 +13,10 @@
     "manifests/init.pp": "3d99de25d3d57430af00855c0ea6d4ba",
     "manifests/key.pp": "7272670d0dd4131ad83e711f3f366c49",
     "manifests/repo/lenny-backports.pp": "c0f1a138f5d8027ca993615419f53189",
-    "manifests/repo/mariadb.pp": "0d177095f7f7961e2a308eb7a796fbd7",
-    "manifests/repo/puppetlabs.pp": "1ea8c8e870693bf7b8c76b93b017a522",
-    "manifests/repo/rabbitmq.pp": "aa8d82aebf99bfd2bd034187b2d76b99",
-    "manifests/repository.pp": "9c21a15afa31b72675852b09d5285c5d",
+    "manifests/repo/mariadb.pp": "2412c8a165dc7e315d751f2157a885d6",
+    "manifests/repo/puppetlabs.pp": "5e2b87e230d55dbc5b01f9f958497d60",
+    "manifests/repo/rabbitmq.pp": "e8653e1731a70b5886524b7eaee4b8d4",
+    "manifests/repository.pp": "fdfa3617cfdf8b3d5ea5c2c703fd7d0d",
     "templates/repository.list.erb": "8fd3cbd3c227985ea8e51ba7c68d3716"
   },
   "dependencies": []

@@ -9,5 +9,6 @@ class apt::repo::puppetlabs {
     url        => "http://apt.puppetlabs.com/debian",
     distro     => "${::lsbdistcodename}",
     repository => "main",
+    require    => Apt::Key["4BD6EC30"]
   }
 }

@@ -10,6 +10,7 @@ class apt::repo::rabbitmq {
     url         => "http://www.rabbitmq.com/debian",
     distro      => "testing",
     repository  => "main",
+    require    => Apt::Key["056E8E56"]
   }
 }
 
