@@ -10,7 +10,7 @@
   "checksums": {
     "Modulefile": "06ac002660340060eeaa00351d007b2c",
     "README": "3947770e637259fcf0c103b2e2f79a56",
-    "manifests/init.pp": "3d99de25d3d57430af00855c0ea6d4ba",
+    "manifests/init.pp": "dc1b764b2c32a490ce6c935d566cd046",
     "manifests/key.pp": "7272670d0dd4131ad83e711f3f366c49",
     "manifests/repo/lenny-backports.pp": "c0f1a138f5d8027ca993615419f53189",
     "manifests/repo/mariadb.pp": "2412c8a165dc7e315d751f2157a885d6",

@@ -29,6 +29,13 @@ class apt {
     mode    => 644;
   }
 
+  # Setup apt sources
+  file { "/etc/apt/sources.list":
+    owner   => root,
+    group   => root,
+    mode    => 644;
+  }
+
   exec { aptget_update:
     command     => "/usr/bin/apt-get -qq update",
     logoutput   => false,
