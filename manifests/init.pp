@@ -19,21 +19,22 @@ class apt {
     ensure  => directory,
     mode    => 0755,
     owner   => root,
-    group   => 0;
+    group   => 0,
   }
 
   # Setup apt options
   file { "/etc/apt/apt.conf":
     owner   => root,
     group   => root,
-    mode    => 644;
+    mode    => 644,
   }
 
   # Setup apt sources
   file { "/etc/apt/sources.list":
     owner   => root,
     group   => root,
-    mode    => 644;
+    mode    => 644,
+    source  => $apt::params::sources_list_src,
   }
 
   exec { aptget_update:
