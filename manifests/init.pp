@@ -29,13 +29,14 @@ class apt {
     mode    => 644,
   }
 
-  # Setup apt sources
-  file { "/etc/apt/sources.list":
-    owner   => root,
-    group   => root,
-    mode    => 644,
-    source  => $apt::params::sources_list_src,
-  }
+#TODO: make params for source and template parameters
+#  # Setup apt sources
+#  file { "/etc/apt/sources.list":
+#    owner   => root,
+#    group   => root,
+#    mode    => 644,
+#    source  => $apt::params::sources_list_src,
+#  }
 
   exec { aptget_update:
     command     => "/usr/bin/apt-get -qq update",
