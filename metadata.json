@@ -10,15 +10,18 @@
   "checksums": {
     "Modulefile": "06ac002660340060eeaa00351d007b2c",
     "README": "3947770e637259fcf0c103b2e2f79a56",
-    "manifests/init.pp": "98def3f1d992634563a677c2d4acedd3",
+    "manifests/init.pp": "28530ba0e57352a3b6548458b487a739",
     "manifests/key.pp": "7272670d0dd4131ad83e711f3f366c49",
     "manifests/params.pp": "517db3e91ffa45400694d02ce4f635a8",
-    "manifests/repo/lenny-backports.pp": "c0f1a138f5d8027ca993615419f53189",
-    "manifests/repo/mariadb.pp": "2412c8a165dc7e315d751f2157a885d6",
-    "manifests/repo/puppetlabs.pp": "5e2b87e230d55dbc5b01f9f958497d60",
+    "manifests/repo/dotdeb_org.pp": "f6e6c71dfd693062490b05844495969a",
+    "manifests/repo/lenny-backports.pp": "be943bd6a432c547de1cf553c869220b",
+    "manifests/repo/mariadb.pp": "77c0619842f5d16af786729485ba1947",
+    "manifests/repo/ourdelta.pp": "3ec2e6f24b87f6f22d73c36c389dfd33",
+    "manifests/repo/percona.pp": "3b912950b542eb5d26b7f1593191dc97",
+    "manifests/repo/puppetlabs.pp": "4ea9d58543049ff7ce45016cd2dd1e6a",
     "manifests/repo/rabbitmq.pp": "e8653e1731a70b5886524b7eaee4b8d4",
-    "manifests/repository.pp": "fdfa3617cfdf8b3d5ea5c2c703fd7d0d",
-    "templates/repository.list.erb": "8fd3cbd3c227985ea8e51ba7c68d3716"
+    "manifests/repository.pp": "b0bd17007ad442d00e532c0692848a26",
+    "templates/repository.list.erb": "105b7d36d3619a562f2c19383d2a1c5f"
   },
   "dependencies": []
 }

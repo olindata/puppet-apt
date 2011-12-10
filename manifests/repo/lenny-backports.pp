@@ -8,6 +8,7 @@ class apt::repo::lenny-backports {
     distro => "${::lsbdistcodename}-backports",
     repository => "main",
     require     => Apt::Key["8347A27F"],
+    source      => true
   }
 }
 
