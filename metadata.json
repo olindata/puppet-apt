@@ -20,7 +20,7 @@
     "manifests/repo/percona.pp": "3b912950b542eb5d26b7f1593191dc97",
     "manifests/repo/puppetlabs.pp": "4ea9d58543049ff7ce45016cd2dd1e6a",
     "manifests/repo/rabbitmq.pp": "e8653e1731a70b5886524b7eaee4b8d4",
-    "manifests/repository.pp": "b0bd17007ad442d00e532c0692848a26",
+    "manifests/repository.pp": "3769542c443fb45f9087b38bb9b3c69b",
     "templates/repository.list.erb": "105b7d36d3619a562f2c19383d2a1c5f"
   },
   "dependencies": []
