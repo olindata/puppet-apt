@@ -59,6 +59,6 @@ define apt::repository (
       }
   }
 
-    Exec["aptget_update"] -> Package <||>
+#    Exec["aptget_update"] -> Package <||>
 }
 
