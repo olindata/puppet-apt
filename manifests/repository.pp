@@ -43,7 +43,6 @@ define apt::repository (
     mode    => "644",
     owner   => "root",
     group   => "root",
-    require => File["/etc/apt/sources.list.d"],
     ensure  => present,
     content => template("apt/repository.list.erb"),
     notify  => Exec["aptget_update"],
