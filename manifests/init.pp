@@ -6,14 +6,6 @@ class apt {
     ensure => installed
   }
 
-  if defined(Package["lsb-release"]) {
-    notice("lsb-release already defined, skipping in module apt")
-  } else {
-    package { "lsb-release": 
-      ensure => installed
-    }
-  }
-
   # Sources Dir
   file { "/etc/apt/sources.list.d":
     ensure  => directory,
