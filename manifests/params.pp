@@ -9,7 +9,8 @@ class apt::params  {
 # (Here are set the defaults, provide your custom variables externally)
 # (The default used is in the line with '')
 
-  ## The credentials to a mysql user that will be able to create other users, databases and grants
+  ## The location of sources.list (where puppet can find it)
+  ## Example: "puppet:///my_module/source.list.lenny"
   $sources_list_src = $::apt_sources_list_src ? {
     ''      => "",
     default => "${::apt_sources_list_src}",

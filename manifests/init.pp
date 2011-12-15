@@ -30,7 +30,7 @@ class apt {
 #    source  => $apt::params::sources_list_src,
 #  }
 
-  exec { aptget_update:
+  exec { "aptget_update":
     command     => "/usr/bin/apt-get -qq update",
     logoutput   => false,
     refreshonly => true,
