@@ -5,3 +5,22 @@ This is the puppet-apt module.
 * Apt module quickly imported from Marco Bonetti's work
 * Adapted by Walter Heck <walter@tribily.com> in 2011-09 for Tribily
 * Adapted by Walter Heck <walter@openquery.com> in 2011-11 for Open Query
+
+This module allows you to easily manage your apt repositories
+
+To use this module, add this module  to your puppet repository and add "include apt" to all your nodes. That should do the trick!
+
+There are a couple of defines for well known apt repositories:
+
+* dotdeb.org
+* lenny-backports
+* mariadb.org
+* ourdelta.org
+* percona
+* puppetlabs
+* rabbitMQ
+* always looking for more!
+
+Feedback is more then welcome!
+
+The Tribily team (github@tribily.com)
