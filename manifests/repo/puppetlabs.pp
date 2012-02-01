@@ -5,10 +5,10 @@ class apt::repo::puppetlabs {
     keyserver  => "pool.sks-keyservers.net",
   }
   
-  $distid = inline_template("<%= scope.lookupvar('::lsbdistid').downcase %>") 
+  $distribution = inline_template("<%= scope.lookupvar('::lsbdistid').downcase %>") 
 
   apt::repository { "puppetlabs":
-    url        => "http://apt.puppetlabs.com/${lsbdistid}",
+    url        => "http://apt.puppetlabs.com/${distribution}",
     distro     => "${::lsbdistcodename}",
     repository => "main",
     require    => Apt::Key["4BD6EC30"],
