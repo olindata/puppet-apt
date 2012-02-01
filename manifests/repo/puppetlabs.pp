@@ -8,7 +8,7 @@ class apt::repo::puppetlabs {
   $distid = inline_template("<%= scope.lookupvar('::lsbdistid').downcase %>") 
 
   apt::repository { "puppetlabs":
-    url        => "http://apt.puppetlabs.com/${::lsbdistid}",
+    url        => "http://apt.puppetlabs.com/${lsbdistid}",
     distro     => "${::lsbdistcodename}",
     repository => "main",
     require    => Apt::Key["4BD6EC30"],
