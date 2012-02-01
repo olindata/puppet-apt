@@ -34,7 +34,11 @@ class apt {
     command     => "/usr/bin/apt-get -qq update",
     logoutput   => false,
     refreshonly => true,
-    subscribe   => [File["/etc/apt/sources.list"], File["/etc/apt/sources.list.d"], File["/etc/apt/apt.conf"]];
+    subscribe   => [
+      File["/etc/apt/sources.list"], 
+      File["/etc/apt/sources.list.d"], 
+      File["/etc/apt/apt.conf"]
+    ];
   }
 }
 
