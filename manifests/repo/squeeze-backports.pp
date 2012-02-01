@@ -1,7 +1,9 @@
 class apt::repo::squeeze-backports {
 
   #Add squeeze-backports repository
-  apt::key { "8347A27F": }
+  apt::key { "8347A27F": 
+    keyserver  => "keyring.debian.org",
+  }
   
   apt::repository { "squeeze-backports":
     url         => "http://backports.debian.org/debian-backports",
