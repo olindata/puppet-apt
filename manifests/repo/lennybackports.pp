@@ -1,10 +1,10 @@
-class apt::repo::lenny-backports {
+class apt::repo::lennybackports {
 
   #Add lenny-backports repository
-  apt::key { "8347A27F": 
+  apt::key { "8347A27F":
     keyserver  => "keyring.debian.org",
   }
-  
+
   apt::repository { "lenny-backports":
     url         => "http://backports.debian.org/debian-backports",
     distro      => "${::lsbdistcodename}-backports",

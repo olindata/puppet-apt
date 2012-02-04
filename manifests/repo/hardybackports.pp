@@ -1,15 +1,15 @@
-class apt::repo::lucid-backports {
+class apt::repo::hardybackports {
 
-  #Add lucid-backports repository
+  #Add hardy-backports repository
   apt::key { "8347A27F": }
-  
-  apt::repository { "lucid-backports":
+
+  apt::repository { "hardy-backports":
     url => "http://archive.ubuntu.com/ubuntu",
     distro => "${::lsbdistcodename}-backports",
     repository => "main restricted universe multiverse",
     require     => Apt::Key["8347A27F"],
     source      => true
   }
-  
+
 }
 
