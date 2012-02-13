@@ -1,10 +1,10 @@
 name 'tribily-apt'
-version '1.0'
+version '1.0.7'
 
 author 'Walter Heck'
-license 'GPL v2'
+license 'Apache License, Version 2.0'
 project_page 'https://github.com/Tribily/puppet-apt'
-source 'https://github.com/Tribily/puppet-apt'
+source 'git://github.com/Tribily/puppet-apt'
 summary 'An apt repo for debian distributions'
 description 'This module allows you to easily manage your apt repositories
 
