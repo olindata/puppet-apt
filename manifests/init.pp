@@ -1,13 +1,13 @@
 # Class for managing apt sources
 class apt {
-  
+
   # Aux packages
-  package { "debconf-utils": 
+  package { 'debconf-utils':
     ensure => installed
   }
 
   # Sources Dir
-  file { "/etc/apt/sources.list.d":
+  file { '/etc/apt/sources.list.d':
     ensure  => directory,
     mode    => 0755,
     owner   => root,
@@ -15,7 +15,7 @@ class apt {
   }
 
   # Setup apt options
-  file { "/etc/apt/apt.conf":
+  file { '/etc/apt/apt.conf':
     owner   => root,
     group   => root,
     mode    => 644,
@@ -30,14 +30,14 @@ class apt {
 #    source  => $apt::params::sources_list_src,
 #  }
 
-  exec { "aptget_update":
-    command     => "/usr/bin/apt-get -qq update",
+  exec { 'aptget_update':
+    command     => '/usr/bin/apt-get -qq update',
     logoutput   => false,
     refreshonly => true,
     subscribe   => [
-      File["/etc/apt/sources.list"], 
-      File["/etc/apt/sources.list.d"], 
-      File["/etc/apt/apt.conf"]
+      File['/etc/apt/sources.list'],
+      File['/etc/apt/sources.list.d'],
+      File['/etc/apt/apt.conf']
     ];
   }
 }

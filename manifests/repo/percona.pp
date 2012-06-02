@@ -2,15 +2,15 @@
 class apt::repo::percona {
 
   # Add puppetlabs repository
-  apt::key { "CD2EFD2A" :
-    keyserver => "hkp://zimmerman.mayfirst.org",
+  apt::key { 'CD2EFD2A' :
+    keyserver => 'hkp://zimmerman.mayfirst.org',
   }
 
-  apt::repository { "percona" :
-    url         => "http://repo.percona.com/apt",
+  apt::repository { 'percona' :
+    url         => 'http://repo.percona.com/apt',
     distro      => $::lsbdistcodename,
-    repository  => "main",
-    require     => Apt::Key["CD2EFD2A"],
+    repository  => 'main',
+    require     => Apt::Key['CD2EFD2A'],
     source      => true,
   }
 }

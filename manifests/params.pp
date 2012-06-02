@@ -1,7 +1,7 @@
 # Class: apt::params
 #
 # Sets internal variables and defaults for apt module
-# This class is automatically loaded in all the classes that use the values set here 
+# This class is automatically loaded in all the classes that use the values set here
 #
 class apt::params  {
 
@@ -12,7 +12,7 @@ class apt::params  {
   ## The location of sources.list (where puppet can find it)
   ## Example: "puppet:///my_module/source.list.lenny"
   $sources_list_src = $::apt_sources_list_src ? {
-    ''      => "",
-    default => "${::apt_sources_list_src}",
+    ''      => '',
+    default => $::apt_sources_list_src,
   }
 }

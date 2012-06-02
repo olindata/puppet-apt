@@ -8,7 +8,7 @@
 #  }
 #
 #
-define apt::key ($url = "", $keyserver = "") {
+define apt::key ($url = '', $keyserver = '') {
   case $url {
     '' : {
       case $keyserver {
