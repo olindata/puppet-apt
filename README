@@ -8,17 +8,21 @@ This is the puppet-apt module.
 
 This module allows you to easily manage your apt repositories
 
-To use this module, add this module  to your puppet repository and add "include apt" to all your nodes. That should do the trick!
+To use this module, add this module  to your puppet repository and add 
+"include apt" to all your nodes. That should do the trick!
 
 There are a couple of defines for well known apt repositories:
 
 * dotdeb.org
-* lenny-backports
+* backports for debian lenny and squeeze and ubuntu hardy and lucid
 * mariadb.org
 * ourdelta.org
 * percona
 * puppetlabs
 * rabbitMQ
+* Tribily.com server monitoring
+* hwraid.le-vert.net
+
 * always looking for more!
 
 Feedback is more then welcome!
