@@ -35,7 +35,6 @@ class apt {
     logoutput   => false,
     refreshonly => true,
     subscribe   => [
-      File['/etc/apt/sources.list'],
       File['/etc/apt/sources.list.d'],
       File['/etc/apt/apt.conf']
     ];
