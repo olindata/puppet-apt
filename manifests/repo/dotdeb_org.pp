@@ -6,7 +6,7 @@ class apt::repo::dotdeb_org {
 
   apt::repository { 'dotdeb' :
     url         => 'http://ftp.hosteurope.de/mirror/packages.dotdeb.org/',
-    distro      => 'oldstable',
+    distro      => 'squeeze',
     repository  => 'all',
     require     => Apt::Key['dotdeb'],
     source      => true,
