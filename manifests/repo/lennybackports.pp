@@ -8,7 +8,6 @@ class apt::repo::lennybackports {
     url         => 'http://archive.debian.org/debian-backports',
     distro      => "${::lsbdistcodename}-backports",
     repository  => 'main',
-    require     => Package['debian-backports-keyring'],
     source      => true
   }
 }
