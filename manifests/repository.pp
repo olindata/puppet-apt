@@ -27,13 +27,8 @@
 #
 #   deb-src http://it.archive.ubuntu.com/ubuntu/ lucid main restricted
 #
-define apt::repository (
-    $url,
-    $distro,
-    $repository,
-    $source=false,
-    $require=undef
-) {
+define apt::repository ($url, $distro, $repository, $source=false,
+  $require=undef) {
 
   include apt
 
@@ -50,15 +45,15 @@ define apt::repository (
   }
 
   if $require {
-      File["${name}.list"] {
-             require => [ $require, File['/etc/apt/sources.list.d'] ]
-     }
+    File["${name}.list"] {
+      require => [ $require, File['/etc/apt/sources.list.d'] ]
+    }
   } else {
-      File["${name}.list"] {
-             require => File['/etc/apt/sources.list.d']
-      }
+    File["${name}.list"] {
+      require => File['/etc/apt/sources.list.d']
+    }
   }
 
-  Exec["aptget_update"] -> Package <||>
+  Exec['aptget_update'] -> Package <||>
 }
 
