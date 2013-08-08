@@ -3,7 +3,14 @@ class apt {
 
   # Aux packages
   package { 'debconf-utils':
-    ensure => installed
+    ensure => present,
+  }
+  
+  package { 'debian-keyring':
+    ensure => present,
+  }
+  package { 'debian-archive-keyring':
+    ensure => present,    
   }
 
   # Sources Dir
