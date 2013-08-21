@@ -21,9 +21,7 @@ There are a couple of defines for well known apt repositories:
 * puppetlabs
 * rabbitMQ
 * Tribily.com server monitoring
-* hwraid.le-vert.net (NOTE: packages in this repo are not signed, so you'll 
-    actually have to install them manually as puppet doesn't allow it. bug filed 
-    here: http://hwraid.le-vert.net/ticket/12)
+* hwraid.le-vert.net
 * always looking for more!
 
 Feedback is more then welcome!
