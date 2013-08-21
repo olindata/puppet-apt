@@ -8,7 +8,7 @@ class apt::repo::puppetlabs {
   apt::repository { 'puppetlabs':
     url        => 'http://apt.puppetlabs.com',
     distro     => $::lsbdistcodename,
-    repository => 'main',
+    repository => 'maindependancies',
     require    => Apt::Key['4BD6EC30'],
     source     => true
   }
