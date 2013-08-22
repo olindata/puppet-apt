@@ -7,8 +7,8 @@
 ###########################################################
 
 # <%= name %> repository
-deb <%= url %> <%= distro %> <%= repository %>
+deb <% if @architecture %>[arch=<%= @architecture %>] <% end %><%= url %> <%= distro %> <%= repository %>
 <% if (source == true) -%>
-deb-src <%= url %> <%= distro %> <%= repository %>
+deb-src <% if @architecture %>[arch=<%= @architecture %>] <% end %><%= url %> <%= distro %> <%= repository %>
 <% end -%>
 

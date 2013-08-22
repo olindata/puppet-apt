@@ -4,10 +4,12 @@
 #
 # Usage:
 #  apt::repository { "name":
+#      ensure => 'present',
 #      url => 'repository url',
 #      distro => 'distrib name',
-#      repository => 'repository name(s)'
-#      source => false
+#      repository => 'repository name(s)',
+#      source => false,
+#      architecture => 'amd64',
 #  }
 #
 # For example, to add the standard Ubuntu Lucid repository, you can use
@@ -27,18 +29,18 @@
 #
 #   deb-src http://it.archive.ubuntu.com/ubuntu/ lucid main restricted
 #
-define apt::repository ($url, $distro, $repository, $source=false,
-  $require=undef) {
+define apt::repository ($ensure='present', $url, $distro, $repository, $source=false,
+  $require=undef, $architecture=undef) {
 
   include apt
 
   # Create repository file
   file { "${name}.list":
+    ensure  => $ensure,
     path    => "/etc/apt/sources.list.d/${name}.list",
     mode    => '644',
     owner   => 'root',
     group   => 'root',
-    ensure  => present,
     content => template('apt/repository.list.erb'),
     notify  => Exec['aptget_update'],
     before  => Exec['aptget_update'],
@@ -54,6 +56,8 @@ define apt::repository ($url, $distro, $repository, $source=false,
     }
   }
 
-  Exec['aptget_update'] -> Package <||>
+  if $ensure == 'present' {
+    Exec['aptget_update'] -> Package <||>
+  }
 }
 
