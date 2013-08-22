@@ -1,6 +1,5 @@
 class apt::repo::mariadb($version = '5.2') {
 
-  # Add puppetlabs repository
   apt::key { '1BB943DB' :
     keyserver => 'keyserver.ubuntu.com',
   }
