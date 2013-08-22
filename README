@@ -18,6 +18,7 @@ There are a couple of defines for well known apt repositories:
 * dotdeb.org
 * backports for debian lenny and squeeze and ubuntu hardy and lucid
 * mariadb.org
+* newrelic
 * ourdelta.org
 * percona
 * puppetlabs
