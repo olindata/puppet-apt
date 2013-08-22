@@ -1,7 +1,6 @@
 # Percona repositories, used for xtrabackup
 class apt::repo::percona {
 
-  # Add puppetlabs repository
   apt::key { 'CD2EFD2A' :
     keyserver => 'hkp://zimmerman.mayfirst.org',
   }
