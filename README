@@ -5,6 +5,8 @@ This is the puppet-apt module.
 * Apt module quickly imported from Marco Bonetti's work
 * Adapted by Walter Heck <walter@tribily.com> in 2011-09 for Tribily
 * Adapted by Walter Heck <walter@openquery.com> in 2011-11 for Open Query
+* Added apt::source compatibilty defination for Puppetlab's apt::source
+  defination by Daniel Black <daniel.black> in 2013-08 for Open Query
 
 This module allows you to easily manage your apt repositories
 
@@ -23,6 +25,9 @@ There are a couple of defines for well known apt repositories:
 * Tribily.com server monitoring
 * hwraid.le-vert.net
 * always looking for more!
+
+As a number of other puppet modules use Puppetlabs apt module this provides
+an apt::source defination with the same inteface (with a few features missing).
 
 Feedback is more then welcome!
 
