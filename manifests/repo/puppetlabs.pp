@@ -5,10 +5,15 @@ class apt::repo::puppetlabs {
     keyserver  => 'pool.sks-keyservers.net',
   }
 
+  if $::lsbdistcodename == 'squeeze' {
+    $repository = 'main'
+  } else {
+    $repository = 'main dependancies'
+  }
   apt::repository { 'puppetlabs':
     url        => 'http://apt.puppetlabs.com',
     distro     => $::lsbdistcodename,
-    repository => 'main dependancies',
+    repository => $repository,
     require    => Apt::Key['4BD6EC30'],
     source     => true
   }
