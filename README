@@ -1,5 +1,7 @@
 puppet-apt
 
+*WARNING: this module is no longer maintained nor recommended for use. We have migrated to https://github.com/olindata/puppetlabs-apt as a replacement*
+
 This is the puppet-apt module.
 
 * Apt module quickly imported from Marco Bonetti's work
